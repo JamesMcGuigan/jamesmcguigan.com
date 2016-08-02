@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+
+# Deploy settings
+destination: _site
+
 # Site settings
 title: James McGuigan - Computer Scientist
 email: james.mcguigan+homepage@gmail.com
