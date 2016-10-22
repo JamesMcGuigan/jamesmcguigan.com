@@ -7,7 +7,7 @@
 
 
 # Deploy settings
-destination: _site
+destination: ../jekyll-static
 
 # Site settings
 title: James McGuigan - Computer Scientist
