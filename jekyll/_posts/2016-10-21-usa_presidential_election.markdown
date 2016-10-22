@@ -24,4 +24,4 @@ Applied some some additional cleanup and filtered out the 100 most commonly used
 Created a JSON dictionary of wordcounts, additionally grouped by Date, Speaker, Location and Party            
 
 
-<script src="/_webpack/usa_presidential_election.js"/>
+<script src="/webpack/usa_presidential_election.js"/>

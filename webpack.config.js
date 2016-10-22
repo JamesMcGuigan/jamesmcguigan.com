@@ -5,15 +5,13 @@ module.exports = {
   //devtool: 'cheap-module-eval-source-map',
   //devtool: 'source-map',
   devtool: 'inline-source-map',
-  entry: [
-    'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack-hot-middleware/client',
-    './src/index'
-  ],
+  entry: {
+    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/index.js',
+  },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    path:     './jekyll/webpack/',
+    filename: '[name].js',
+    publicPath: './jekyll/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
