@@ -4,13 +4,14 @@
 ## Install
 
 ```
+sudo gem install bundler
 bundler install
-cd jekyll
-jekyll clean;
+npm install
+typings install
 
-jekyll build  --incremental --watch;
-(cd jekyll/_site; python -m SimpleHTTPServer 8000)
+(webpack --watch)
+(cd jekyll; jekyll clean serve --incremental --watch); open http://127.0.0.1:4000/
 
-jekyll serve --incremental --watch
-open http://127.0.0.1:4000/
+(cd jekyll; jekyll build  --incremental --watch;)
+(cd jekyll/_site; python -m SimpleHTTPServer 8000); open http://127.0.0.1:8000/
 ```

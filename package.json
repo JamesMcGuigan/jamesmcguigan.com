@@ -4,6 +4,13 @@
   "description": "Website files for jamesmcguigan.com",
   "repository": "https://github.com/JamesMcGuigan/jamesmcguigan.com",
   "dependencies": {
+    "angular2": "^2.0.0-beta.17",
+    "d3": "^4.2.8",
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.4",
+    "moment": "^2.15.1"
+  },
+  "devDependencies": {
     "babel": "^6.5.2",
     "css-loader": "^0.25.0",
     "csv": "^1.1.0",
@@ -14,6 +21,7 @@
     "style-loader": "^0.13.1",
     "ts-loader": "^0.9.5",
     "webpack": "^1.13.2",
-    "webpack-hot-middleware": "^2.13.0"
+    "webpack-hot-middleware": "^2.13.0",
+    "typings": "^1.4.0"
   }
 }
