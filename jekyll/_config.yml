@@ -11,7 +11,7 @@ destination: _site
 
 # Site settings
 title: James McGuigan - Computer Scientist
-email: james.mcguigan+homepage@gmail.com
+email: james.mcguigan.cv@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Sometimes I like to try new things, here are some of my ideas and experiments
 baseurl: "" # the subpath of your site, e.g. /blog
