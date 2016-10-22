@@ -1,3 +1,5 @@
+// Example config: https://github.com/AngularClass/angular2-webpack-starter/blob/master/config/webpack.dev.js
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -6,7 +8,7 @@ module.exports = {
   //devtool: 'source-map',
   devtool: 'inline-source-map',
   entry: {
-    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/index.js',
+    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/index.tsx',
   },
   output: {
     path:     './jekyll/webpack/',
@@ -18,14 +20,27 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    //modulesDirectories: ['node_modules'],
+    extensions: ['*', '.html', '.scss', '.js', '.jsx', '.ts', '.tsx']
   },
   module: {
-    loaders: [{
-      test: /\.js|\.jsx$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src')
-    },
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel-loader'],
+        exclude: [/\.(spec|e2e)\.jsx?$/],
+        include: path.join(__dirname, 'node_modules')
+      },
+      {
+        test: /\.tsx?$/,
+        loaders: [
+          '@angularclass/hmr-loader?pretty=true',
+          'awesome-typescript-loader',
+          'angular2-template-loader'
+        ],
+        exclude: [/\.(spec|e2e)\.tsx?$/],
+        include: path.join(__dirname, 'node_modules')
+      },
       {
         test: /\.scss$/,
         loader: "style!css!sass"
