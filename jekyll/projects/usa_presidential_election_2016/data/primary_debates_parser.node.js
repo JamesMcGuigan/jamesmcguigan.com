@@ -40,6 +40,9 @@ var util = {
     return _(object)
       .omit(require('./common_words.json'))
       .pickBy((x) => x >= 3)
+      .toPairs()
+      .take(100)
+      .fromPairs()
       .value()
     ;
   }

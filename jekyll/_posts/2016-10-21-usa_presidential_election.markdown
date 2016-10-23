@@ -8,9 +8,15 @@ categories: data-visualization
 
 > "It's Just Words, Folks, Just Words" - Donald Trump
 
-<div ng-controller="UsaElection">
-<div ng-bind="name"></div>
-</div>
+<!--<div ng-controller="UsaElection">-->
+<!--<div ng-bind="name"></div>-->
+<!--</div>-->
+
+<table id="wordSummary"><thead/><tbody/></table>
+
+<table id="topWordsByParty"><thead/><tbody/></table>
+
+<table id="topWordsBySpeaker"><thead/><tbody/></table>
 
 ## Source Files
 

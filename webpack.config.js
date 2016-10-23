@@ -8,7 +8,11 @@ module.exports = {
   //devtool: 'source-map',
   devtool: 'inline-source-map',
   entry: {
-    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/angular/index.jsx',
+    usa_presidential_election: [
+      //'eventsource-polyfill', // necessary for hot reloading with IE
+      'webpack-hot-middleware/client',
+      './jekyll/projects/usa_presidential_election_2016/angular/index.jsx',
+    ]
   },
   output: {
     path:     './jekyll/webpack/',
@@ -21,7 +25,7 @@ module.exports = {
   ],
   resolve: {
     //modulesDirectories: ['node_modules'],
-    extensions: ['*', '.html', '.scss', '.js', '.jsx', '.ts', '.tsx']
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'] // '.scss', '.html'
   },
   module: {
     loaders: [
