@@ -9,12 +9,13 @@
     "jquery": true,
     "node": true
   },
+  "parser": "typescript-eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 5,
+    "ecmaVersion": 6,
     "sourceType": "script",
     "impliedStrict": true,
     "ecmaFeatures": {
-      "jsx": false
+      "jsx": true
     }
   },
   "plugins": [

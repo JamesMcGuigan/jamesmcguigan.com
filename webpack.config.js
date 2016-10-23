@@ -8,7 +8,7 @@ module.exports = {
   //devtool: 'source-map',
   devtool: 'inline-source-map',
   entry: {
-    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/index.tsx',
+    usa_presidential_election: './jekyll/projects/usa_presidential_election_2016/angular/index.jsx',
   },
   output: {
     path:     './jekyll/webpack/',

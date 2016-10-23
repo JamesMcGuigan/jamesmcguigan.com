@@ -5,11 +5,12 @@ date:   2016-10-21 17:00:00 +0100
 categories: data-visualization
 ---
 
+
 > "It's Just Words, Folks, Just Words" - Donald Trump
 
-<div widget="presidential-table">AAA</div>
-<presidential-table></presidential-table>
-
+<div ng-controller="UsaElection">
+<div ng-bind="name"></div>
+</div>
 
 ## Source Files
 
