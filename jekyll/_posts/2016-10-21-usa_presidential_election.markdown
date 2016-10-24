@@ -12,10 +12,12 @@ categories: data-visualization
 <!--<div ng-bind="name"></div>-->
 <!--</div>-->
 
+<words-summary-by-speaker></words-summary-by-speaker>
+
+<words-force-layout></words-force-layout>
+
 <table id="wordSummary"><thead/><tbody/></table>
-
 <table id="topWordsByParty"><thead/><tbody/></table>
-
 <table id="topWordsBySpeaker"><thead/><tbody/></table>
 
 ## Source Files
@@ -32,4 +34,5 @@ Applied some some additional cleanup and filtered out the 100 most commonly used
 Created a JSON dictionary of wordcounts, additionally grouped by Date, Speaker, Location and Party            
 
 
-<script src="/webpack/usa_presidential_election.js"/>
+<script src="/webpack/common.bundle.js"></script>
+<script src="/webpack/usa_presidential_election.bundle.js"></script>

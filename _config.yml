@@ -7,7 +7,8 @@
 
 
 # Deploy settings
-destination: ../jekyll-static
+source:      ./jekyll/
+destination: ./jekyll-static/
 
 # Site settings
 title: James McGuigan - Computer Scientist
@@ -17,9 +18,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jamesmcguigan.com" # the base hostname & protocol for your site
 twitter_username:
-github_username:  JamesMcGuigan
-linkedin_username:  JamesMcGuigan
-email_username:  JamesMcGuigan
+github_username:   JamesMcGuigan
+linkedin_username: JamesMcGuigan
+email_username:    JamesMcGuigan
 
 # Build settings
 markdown: kramdown

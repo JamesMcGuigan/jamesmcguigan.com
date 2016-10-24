@@ -40,8 +40,10 @@
     "json5-loader": "^0.6.0",
     "loaders-by-extension": "^1.0.0",
     "lodash": "^4.16.4",
+    "ng-annotate-webpack-plugin": "^0.1.3",
     "node-sass": "^3.10.1",
     "npm-install-peers": "^1.0.1-rc.3",
+    "react-hot-loader": "^3.0.0-beta.6",
     "reflect-metadata": "0.1.2",
     "rxjs": "^5.0.0-beta.6",
     "sass-loader": "^4.0.2",
@@ -50,13 +52,20 @@
     "ts-loader": "^0.9.5",
     "typescript": "^2.0.3",
     "typescript-eslint-parser": "^0.4.0",
-    "typings": "^1.4.0",
-    "webpack": "2.1.0-beta.25",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-dev-server": "^2.1.0-beta.9",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-hmr": "^1.0.0",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.13.0",
     "webpack-md5-hash": "^0.0.5",
     "webpack-merge": "^0.15.0",
+    "webpack-vendor-chunk-plugin": "^1.0.0",
     "zone.js": "^0.6.10"
+  },
+  "global": {
+    "eslint": "^3.8.1",
+    "webpack": "^2.1.0-beta.25",
+    "typings": "^1.4.0",
+    "webpack-dev-server": "2.1.0-beta.9"
   }
 }
