@@ -18,6 +18,7 @@
     "angular2-template-loader": "^0.5.0",
     "awesome-typescript-loader": "^2.2.4",
     "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "css-loader": "^0.25.0",
     "csv": "^1.1.0",

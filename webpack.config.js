@@ -10,7 +10,7 @@ module.exports = {
   entry: {
     usa_presidential_election: [
       //'eventsource-polyfill', // necessary for hot reloading with IE
-      'webpack-hot-middleware/client',
+      //'webpack-hot-middleware/client',
       './jekyll/projects/usa_presidential_election_2016/angular/index.jsx',
     ]
   },
@@ -20,8 +20,8 @@ module.exports = {
     publicPath: './jekyll/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    //new webpack.HotModuleReplacementPlugin(),
+    //new webpack.NoErrorsPlugin()
   ],
   resolve: {
     //modulesDirectories: ['node_modules'],
