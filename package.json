@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Website files for jamesmcguigan.com",
   "repository": "https://github.com/JamesMcGuigan/jamesmcguigan.com",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
   "dependencies": {
     "angular": "^1.5.8",
     "angular2": "2.0.0-beta.17",
@@ -20,12 +27,18 @@
     "babel": "^6.5.2",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.25.0",
     "csv": "^1.1.0",
     "es6-shim": "^0.35.0",
     "eslint": "^3.8.1",
     "eslint-plugin-lodash": "^2.1.6",
+    "eslint-plugin-react": "^6.4.1",
     "eventsource-polyfill": "^0.9.6",
+    "json5-loader": "^0.6.0",
+    "loaders-by-extension": "^1.0.0",
     "lodash": "^4.16.4",
     "node-sass": "^3.10.1",
     "npm-install-peers": "^1.0.1-rc.3",

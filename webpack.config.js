@@ -2,6 +2,8 @@
 
 var path = require('path');
 var webpack = require('webpack');
+var loadersByExtension = require('loaders-by-extension');
+
 
 module.exports = {
   //devtool: 'cheap-module-eval-source-map',
@@ -15,7 +17,7 @@ module.exports = {
     ]
   },
   output: {
-    path:     './jekyll/webpack/',
+    path:     './jekyll-static/webpack/',
     filename: '[name].js',
     publicPath: './jekyll/'
   },
@@ -24,7 +26,6 @@ module.exports = {
     //new webpack.NoErrorsPlugin()
   ],
   resolve: {
-    //modulesDirectories: ['node_modules'],
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'] // '.scss', '.html'
   },
   module: {
@@ -32,22 +33,21 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loaders: ['babel-loader'],
-        exclude: [/\.(spec|e2e)\.jsx?$/],
-        include: path.join(__dirname, 'node_modules')
+        exclude: [/\.(spec|e2e)\.jsx?$/, /node_modules/],
       },
       {
         test: /\.tsx?$/,
-        loaders: [
-          '@angularclass/hmr-loader?pretty=true',
-          'awesome-typescript-loader',
-          'angular2-template-loader'
-        ],
-        exclude: [/\.(spec|e2e)\.tsx?$/],
-        include: path.join(__dirname, 'node_modules')
+        loader: 'typescript-loader?typescriptCompiler=jsx-typescript',
+        exclude: [/\.(spec|e2e)\.tsx?$/, /node_modules/]
       },
       {
         test: /\.scss$/,
         loader: "style!css!sass"
-      }]
+      },
+      {
+        test: /\.json5$/,
+        loader: 'json5-loader'
+      }
+    ]
   }
 };
