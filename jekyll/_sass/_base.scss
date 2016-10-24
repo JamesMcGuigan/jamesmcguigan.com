@@ -47,6 +47,17 @@ table,
         margin-top: $spacing-unit / 2;
     }
 }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td, th {
+        marging: 0;
+        padding: 0.5em;
+        border: 1px solid black;
+    }
+}
+
 
 /**
  * Images
