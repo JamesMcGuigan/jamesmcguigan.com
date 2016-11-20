@@ -26,7 +26,15 @@
           {% endif %}
 
           {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            {% include icon-email.html email=site.email %}
+          </li>
+          {% endif %}
+
+          {% if site.cv %}
+            <li>
+              {% include icon-cv.html cv=site.cv %}
+            </li>
           {% endif %}
         </ul>
       </div>
