@@ -12,7 +12,7 @@ destination: ./jekyll-static/
 
 # Site settings
 title: James McGuigan - Javascript Architect
-email: james.mcguigan.cv@gmail.com
+email: james.mcguigan.github@gmail.com
 cv:    https://www.dropbox.com/s/a74hgf04ebki3mm/james-mcguigan-cv-2016-10-telleroo.pdf
 description: > # this means to ignore newlines until "baseurl:"
   Sometimes I like to try new things, here are some of my ideas and experiments
