@@ -84,3 +84,9 @@ I like javascript, it's a very flexible and quite powerful language.
 
 ## Cross Browser Testing
 - [https://dev.windows.com/en-us/microsoft-edge/tools/vms/mac/]() - VMware images for older versions of IE - best way to do cross browser IE testing is in a VM
+
+
+## Hosting
+- [https://digitalocean.com]() - Digital Ocean - easy virtual machines with $5/month microservers
+- [https://aws.amazon.com/]() - AWS - large scale cloud computing, with advanced features for autodeploying server clusters
+- [https://www.rackspace.co.uk/]() - Rackspace - Expensive managed hosting with professional DevOps technical support
