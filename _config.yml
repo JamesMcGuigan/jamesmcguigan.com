@@ -11,9 +11,9 @@ source:      ./jekyll/
 destination: ./jekyll-static/
 
 # Site settings
-title: James McGuigan - Javascript Architect
+title: James McGuigan - Solutions Architect - Big Data Visualization
 email: james.mcguigan.github@gmail.com
-cv:    https://www.dropbox.com/s/mjnc8eb7kckxeqp/james-mcguigan-cv-2016-11-credit-suisse.pdf
+cv:    https://www.dropbox.com/s/jnt44zj8d5h4q7x/james-mcguigan-cv-2018-11-credit-suisse.pdf
 description: > # this means to ignore newlines until "baseurl:"
   Sometimes I like to try new things, here are some of my ideas and experiments
 baseurl: "" # the subpath of your site, e.g. /blog
